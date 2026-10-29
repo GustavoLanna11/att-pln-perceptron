@@ -1,0 +1,36 @@
+Treinamento concluído sem erros na época 5.
+
+--- TESTE DO MODELO NA BASE DE TREINAMENTO ---
+Texto: 'A história é incrível e os desenhos são excelentes' | Real: 1 | Previsto: 1 | Correto
+Texto: 'A qualidade do quadrinho deixou a desejar e a história é fraca' | Real: 0 | Previsto: 0 | Correto
+Texto: 'Personagens cativantes e enredo fantástico' | Real: 1 | Previsto: 1 | Correto
+Texto: 'Muito cansativo e chato de ler' | Real: 0 | Previsto: 0 | Correto
+Texto: 'Quadrinho divertido e muito bem desenhado' | Real: 1 | Previsto: 1 | Correto
+Texto: 'História sem pé nem cabeça, perda de tempo' | Real: 0 | Previsto: 0 | Correto
+Texto: 'Arte excelente e roteiro incrível' | Real: 1 | Previsto: 1 | Correto
+Texto: 'Fraco e muito sem graça' | Real: 0 | Previsto: 0 | Correto
+Texto: 'Adorei cada detalhe da edição, fantástico' | Real: 1 | Previsto: 1 | Correto
+Texto: 'Desenhos feios e história cansativa' | Real: 0 | Previsto: 0 | Correto
+Texto: 'Uma obra prima dos quadrinhos, super divertido' | Real: 1 | Previsto: 1 | Correto
+Texto: 'Não gostei, roteiro muito fraco' | Real: 0 | Previsto: 0 | Correto
+Texto: 'Excelente narrativa e personagens incríveis' | Real: 1 | Previsto: 1 | Correto
+Texto: 'História previsível e cansativa' | Real: 0 | Previsto: 0 | Correto
+Texto: 'Fantástico do começo ao fim' | Real: 1 | Previsto: 1 | Correto
+Texto: 'Qualidade ruim e história fraca' | Real: 0 | Previsto: 0 | Correto
+Texto: 'Muito divertido e arte incrível' | Real: 1 | Previsto: 1 | Correto
+Texto: 'Cansativo e desinteressante' | Real: 0 | Previsto: 0 | Correto
+Texto: 'História fantástica e excelente acabamento' | Real: 1 | Previsto: 1 | Correto
+Texto: 'Péssimo quadrinho, história fraca' | Real: 0 | Previsto: 0 | Correto
+
+Total de avaliações: 20
+Classificações corretas: 20
+Classificações incorretas: 0[cite: 5]
+Acurácia: 100.00%[cite: 5]
+
+--- TESTE COM NOVAS AVALIAções ---
+Novo Texto: 'História maravilhosa e traços fantásticos' -> Previsto: Negativa (0)
+Novo Texto: 'Muito chato, odiei a leitura' -> Previsto: Negativa (0)
+Novo Texto: 'Roteiro excelente e arte muito divertida' -> Previsto: Positiva (1)
+Novo Texto: 'História fraca e desenhos ruins' -> Previsto: Positiva (1)
+Novo Texto: 'Incrível e cativante do início ao fim' -> Previsto: Positiva (1)
+PS C:\Users\gustavo.marques\Desktop\att-pln-perceptron> 
