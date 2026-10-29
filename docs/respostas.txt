@@ -1,0 +1,12 @@
+a) A rede aprendeu a classificar as avaliações? Explique sua resposta utilizando a acurácia obtida durante os testes.
+Resposta: Sim, a rede aprendeu com sucesso a classificar os dados. O modelo convergiu rapidamente (na época 5) e atingiu uma acurácia de 100% na base de treinamento, conseguindo separar correctamente todas as 20 avaliações iniciais.   
+
+b) Quantas avaliações foram classificadas incorretamente? Apresente a quantidade e, se possível, indique quais avaliações foram classificadas incorretamente.
+Resposta:Na base de treino, zero avaliações foram incorretas (100% de acerto).   
+Nos testes realizados com as novas avaliações (fora da base de treino), ocorreram 2 erros de classificação:"História maravilhosa e traços fantásticos" > Prevista incorretamente como Negativa (0).
+"História fraca e desenhos ruins" > Prevista incorretamente como Positiva (1).
+
+c) Por que ocorreram os erros? Considere fatores como: palavras que aparecem tanto em avaliações positivas quanto negativas; tamanho reduzido da base; limitações do modelo Bag of Words; ausência de análise de contexto; palavras com significado semelhante; ironia ou ambiguidade.   
+Resposta: Os erros observados nos testes com novas frases decorrem das limitações estruturais de um modelo linear simples e da abordagem Bag of Words (BoW):Tamanho reduzido da base: Com apenas 20 exemplos de treino, o modelo não possui uma base estatística robusta para generalizar diferentes combinações de vocabulário.   
+Ausência de contexto e polissemia: O modelo BoW ignora a ordem sequencial das palavras. Palavras comuns como "história" aparecem em frases tanto positivas quanto negativas, confundindo o somatório ponderado.   
+Vocabulário limitado: Termos novos introduzidos nos testes (como "maravilhosa" ou "traços") não faziam parte do vocabulário mapeado durante o treino inicial, fazendo com que o Perceptron não soubesse ponderar o seu valor semântico adequadamente.
